@@ -15,7 +15,10 @@ export const CountryRestrictions: CountryRestrictionsType = {
   [Country.KZ]: defaultRestriction,
   [Country.LT]: defaultRestriction,
   [Country.LV]: defaultRestriction,
-  [Country.RU]: defaultRestriction,
+  [Country.RU]: {
+    ...defaultRestriction,
+    startsWith: '79',
+  },
   [Country.TJ]: defaultRestriction,
   [Country.TM]: defaultRestriction,
   [Country.UA]: defaultRestriction,

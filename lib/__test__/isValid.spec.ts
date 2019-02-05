@@ -8,5 +8,6 @@ describe('isValid', () => {
 
   test('should return false on incorrect RU number', () => {
     expect(isValid('7999495503', [Country.RU])).toBeFalsy()
+    expect(isValid('78994955033', [Country.RU])).toBeFalsy()
   })
 })
