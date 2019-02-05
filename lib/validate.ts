@@ -1,4 +1,5 @@
 import { defineCountry } from './defineCountry'
+import { isValid } from './isValid'
 import { normalize } from './normalize'
 
 export const validate = (phone: string) => {
@@ -6,7 +7,7 @@ export const validate = (phone: string) => {
 
   const countries = defineCountry(normalizedPhone)
 
-  const valid = true // TODO: add real validation
+  const valid = isValid(normalizedPhone, countries)
 
   return {
     countries,
