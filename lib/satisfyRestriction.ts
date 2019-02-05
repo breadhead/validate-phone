@@ -4,10 +4,12 @@ const satisfyLength = (phone: string, restrinction: Restriction): boolean =>
   phone.length >= restrinction.minLength &&
   phone.length <= restrinction.maxLength
 
-const satisfyContent = (phone: string, restrinction: Restriction): boolean =>
-  !!restrinction.startsWith ? phone.startsWith(restrinction.startsWith) : true
+const satisfyPrefix = (phone: string, restrinction: Restriction): boolean =>
+  restrinction.startsWith.length > 0
+    ? restrinction.startsWith.some(prefix => phone.startsWith(prefix))
+    : true
 
 export const satisfyRestriction = (phone: string) => (
   restrinction: Restriction,
 ): boolean =>
-  satisfyLength(phone, restrinction) && satisfyContent(phone, restrinction)
+  satisfyLength(phone, restrinction) && satisfyPrefix(phone, restrinction)

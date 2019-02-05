@@ -4,6 +4,7 @@ import { Restriction } from './Restriction'
 const defaultRestriction: Restriction = {
   minLength: 11,
   maxLength: 11,
+  startsWith: [],
 }
 
 type CountryRestrictionsType = { [key in Country]: Restriction }
@@ -17,7 +18,7 @@ export const CountryRestrictions: CountryRestrictionsType = {
   [Country.LV]: defaultRestriction,
   [Country.RU]: {
     ...defaultRestriction,
-    startsWith: '79',
+    startsWith: ['79'],
   },
   [Country.TJ]: defaultRestriction,
   [Country.TM]: defaultRestriction,
