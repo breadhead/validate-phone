@@ -6,4 +6,4 @@ export const isValid = (phone: string, countries: Country[]): boolean =>
   Object.entries(CountryRestrictions)
     .filter(([country, _]) => countries.includes(country as Country))
     .map(([_, restriction]) => restriction)
-    .every(satisfyRestriction(phone))
+    .some(satisfyRestriction(phone))
