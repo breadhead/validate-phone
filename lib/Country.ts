@@ -1,0 +1,17 @@
+export enum Country {
+  RU = 'Russia',
+  KZ = 'Kazakhstan',
+  US = 'United States of America',
+  CA = 'Canada',
+  BY = 'Belarus',
+  UA = 'Ukraine',
+  AM = 'Armenia',
+  GE = 'Georgia',
+  UZ = 'Uzbekistan',
+  TJ = 'Turkmenistan',
+  KG = 'Kyrgyzstan',
+  TM = 'Turkmenistan',
+  LV = 'Latvia',
+  LT = 'Lithuania',
+  EE = 'Estonia',
+}
