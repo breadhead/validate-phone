@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- '8'
+- '10'
+cache: yarn
+script: yarn ci
+deploy:
+  provider: npm
+  email: igor@kamyshev.me
+  skip_cleanup: true
+  api_key:
+    secure: Q1+1fxlBIcI8mMuROzAWAIRS5z4bEGrfB+SAfy4wuSEUhnYFCUelV2cCzmlYcC1MjLOiPz1saUy2JhHqFwLHH4YbOQKWG4JEA6jfpmxSG6cuNpoHmxB3WnKNaZbq+PDmYxX349NrjDmXG/FgSIUFC5ZhUT8NRoihv1bDejg2THqSrCxKS7qNUA4zyUjAGsjXKZtEhbP2gA/3lqR/1ldSlogHuACG5SI94wdniR25CpayCHQZVoxU7CwxjFQ4HeE1F8vZoRLVs7CvU++bPABHfoMcuxwQnqFZO2Fk99ThJZqP8Jrc9bt4XYBBb9hahJB1a+Joht8c8qLmXKHEGB/KdB9K29mCpl5YWKH3LSRjJiO2EZCcKIpIcRrleh8Msg/1YHFBtL5IcLq1NrKh0nen7vyxatixHD0E+S5shNlhQI/itkYhdo49i8rPELS4IkeF2CStqwijQfZ5uryHq1OImzxUNHuGSjcIu/KiB1v5DmGrk4/nfGviiisxA3eRQA3Up+LZNypwhFw1E+/gHVGIKBEcWwidwb63PaKyTcqp1qDiNmj4knsD0mxZ/eoCw9i7cqOFJ/m7nj7J6a1gctpMU1nqm2oGiI/Q8dthsAy5BvPEPxV49dtSSeO47CSlGloptszzBwQNtFvYrY/TWMXyzaTNpaE+uUEJQjiIsQcD9WQ=
+  on:
+    tags: true
+    repo: breadhead/validate-phone
