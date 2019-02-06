@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/breadhead/validate-phone/compare/v0.1.0...v1.0.0) (2019-02-06)
+
+
+### Documentation
+
+* add readme ([dd63543](https://github.com/breadhead/validate-phone/commit/dd63543))
+
+
+### BREAKING CHANGES
+
+* release
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2019-02-06)
 
