@@ -1,6 +1,6 @@
 {
   "name": "@breadhead/validate-phone",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "repository": "git@github.com:breadhead/validate-phone.git",
   "author": "Igor Kamyshev <igor@kamyshev.me>",
